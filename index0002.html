@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            height:100vh;
+            
+            
+        }
+        .aside{
+            flex-basis: 20%;
+            background-color: darkcyan;
+        }
+        .header{
+            flex-basis: 20%;
+            background-color: gold;
+            
+        }
+        .section{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .column-right{
+            flex-direction: column;
+            background-color: indigo;
+            width: 50%;
+            height: 100%;
+            display: flex;
+           text-align: center;  
+        }
+        .column-left{
+            display: flex;
+            flex-direction:row;
+            background-color: lawngreen;
+            width: 50%;
+            height: 100%;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="aside">
+            <h1>Меню</h1>
+        </div>
+        <div class="section">
+            <div class="header">
+                <h1>Заголовок</h1>
+            </div>
+            <div class="content">
+                <div class="column-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim suscipit adipisci, aut exercitationem placeat harum magni unde vel rerum, eum culpa, quam corrupti quod. Dolores minus veniam necessitatibus est in!</div>
+                <div class="column-right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet dolor sint, perspiciatis repellat inventore iure expedita, adipisci fugit necessitatibus sed at nisi similique velit quibusdam explicabo commodi, laudantium laborum quae!</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
