@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:nth-child(1){
+            background-color: blueviolet;
+        }
+        input[type=text]:focus{
+            background-color: yellow;
+        }
+        input[type=submit]{
+            background-color: yellowgreen;
+        }
+        input[type=submit]:focus{
+            background-color: yellow;
+        }
+        a:active{
+            background-color: crimson;
+        }
+        a:visited{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Простая ссылка</a>
+    <form>
+        <input type="text" name="" id="text-input">
+        <input type="submit" value="Search">
+    </form>
+    <a href="active.html">Ссылка была посещена</a>
+    <a href="not_active.html">Ссылка не была посещена</a>
+</body>
+</html>
