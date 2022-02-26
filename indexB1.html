@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            width:500px;
+            height: 500px;
+            color:white;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            white-space: nowrap;
+            position: relative;
+        }
+        .block::before{
+            content:'👨🏽‍💻';
+            position: absolute;
+            width: 90%;
+            height: 5px;
+            background-color: white;
+            top: 10%;
+        }
+        .block::after{
+            content:'🏀';
+            position:absolute;
+            width: 90%;
+            height: 5px;
+            background-color: white;
+            bottom: 10%;
+        }
+        .popup{
+            color: white;
+            background-color:purple;
+            display: inline-block;
+            font-size: 2.25em;
+            padding: 1em;
+            position: relative;
+            border-radius: 5px;
+
+        }
+        .popup:hover::before{
+            content: 'Всплывающее окно';
+            position: absolute;
+            padding: 1em;
+            top: 50%;
+            left:25%;
+            border-radius:5px;
+            white-space: nowrap;
+            background-color: chartreuse;
+            color:black;
+        }
+        .popup::after{
+            content: '';
+        }
+    </style>
+</head>
+<body>
+    <div class="block">Просто текст</div>
+    <div class="popup">Наведи меня на курсор</div>
+</body>
+</html>
