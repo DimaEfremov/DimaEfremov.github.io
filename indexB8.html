@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #FBF404;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+        }
+        .image{
+            background-image: url('img/design.png');
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            min-width: 150px;
+            min-height: 150px;
+            border: 5px solid #04FBF4;
+            border-radius: 50%;
+        }
+        .info{
+            color:black;
+            font-family: sans-serif;
+            margin-left: 1em;
+        }
+        h1,h2,h3{
+            padding: .115em;
+        }
+        h1{
+            color: #F404FB;
+            
+        }
+        button{
+            color:black;
+            background-color: orangered;
+            border: orangered;
+            border-radius: 10px;
+            padding: 1em;
+            font-size: 1.25em;
+            font-weight: bold;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image"></div>
+        <div class="info">
+            <h2>Приглашаем вас принять участие в наших уроках </h2>
+            <h1>30 февраля</h1>
+            <h3>Уроки ведёт - когда придёте, тогда и узнаете</h3>
+            <button>Принять участие</button>
+        </div>
+    </div>
+</body>
+</html>
