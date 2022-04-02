@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            
+        }
+        .container{
+            background-color:midnightblue;
+            color: white;
+            font-family: fantasy;
+            text-align: center;
+            width: 100%;
+        }
+        html{
+            overflow:hidden
+        }
+        svg{
+            display: block;
+            position: absolute;
+            width: calc(100vw + 40px);
+            bottom: 0;
+        }
+        img{
+            display: block;
+            position: absolute;
+            width: calc(50vw + 280px);
+            bottom: 0;
+            left: 10%;
+            animation: ship 2s .4s ease-in-out infinite;
+        }
+        @keyframes wave{
+            50% {
+                left: 0;
+            }
+        }
+        @keyframes ship{
+            50% {
+                transform: rotate(5deg);
+            }
+        }
+        svg:nth-of-type(1){
+            left: -40px;
+            animation: wave 4s .4s ease-in-out infinite;
+        }
+        svg:nth-of-type(2){
+            left: -20px;
+            animation: wave 3s .4s ease-in-out infinite;
+        }
+        svg:nth-of-type(3){
+            left: -10px;
+            animation: wave 2s .4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HELLO WORLD</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam tempore eaque fugiat autem quod natus dolores explicabo omnis dignissimos ratione pariatur, alias eum recusandae labore accusamus possimus velit quidem. Beatae!</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4169E1" fill-opacity="1" d="M0,128L14.1,117.3C28.2,107,56,85,85,96C112.9,107,141,149,169,160C197.6,171,226,149,254,128C282.4,107,311,85,339,64C367.1,43,395,21,424,21.3C451.8,21,480,43,508,74.7C536.5,107,565,149,593,165.3C621.2,181,649,171,678,138.7C705.9,107,734,53,762,69.3C790.6,85,819,171,847,192C875.3,213,904,171,932,160C960,149,988,171,1016,186.7C1044.7,203,1073,213,1101,192C1129.4,171,1158,117,1186,122.7C1214.1,128,1242,192,1271,186.7C1298.8,181,1327,107,1355,80C1383.5,53,1412,75,1426,85.3L1440,96L1440,320L1425.9,320C1411.8,320,1384,320,1355,320C1327.1,320,1299,320,1271,320C1242.4,320,1214,320,1186,320C1157.6,320,1129,320,1101,320C1072.9,320,1045,320,1016,320C988.2,320,960,320,932,320C903.5,320,875,320,847,320C818.8,320,791,320,762,320C734.1,320,706,320,678,320C649.4,320,621,320,593,320C564.7,320,536,320,508,320C480,320,452,320,424,320C395.3,320,367,320,339,320C310.6,320,282,320,254,320C225.9,320,198,320,169,320C141.2,320,113,320,85,320C56.5,320,28,320,14,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,64L40,85.3C80,107,160,149,240,160C320,171,400,149,480,138.7C560,128,640,128,720,117.3C800,107,880,85,960,101.3C1040,117,1120,171,1200,186.7C1280,203,1360,181,1400,170.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+        <img src="Ship-Download-PNG.png">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00BFFF" fill-opacity="1" d="M0,96L26.7,101.3C53.3,107,107,117,160,128C213.3,139,267,149,320,181.3C373.3,213,427,267,480,256C533.3,245,587,171,640,165.3C693.3,160,747,224,800,224C853.3,224,907,160,960,117.3C1013.3,75,1067,53,1120,85.3C1173.3,117,1227,203,1280,229.3C1333.3,256,1387,224,1413,208L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+       
+    </div> 
+
+</body>
+</html>
