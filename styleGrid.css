@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.grid-container{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1.5fr 4fr 3fr 2fr;
+    grid-template-columns: 1fr 1.2fr 2fr;
+}
+main{
+    position: relative;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: cornflowerblue;
+}
+.tasty{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color:rgb(162, 236, 119);
+}
+.healthy{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color:palegoldenrod;
+}
+footer{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(149, 39, 192);
+}
+nav{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color:rgb(0, 140, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icecream{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: url('img/ice.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.logo span{
+    font-family: 'Pacifico', cursive;
+    color:coral;
+    font-size: 75px;
+    padding: 0 50px;
+    cursor: pointer;
+}
+.text, h5, span{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color:black;
+}
+.text{
+    position: absolute;
+    top:50%;
+    transform: translateY(-25%);
+    font-size: 25px;
+    padding: 0 50px;
+}
+.tasty, .healthy, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h5{
+    color:white;
+}
+h5{
+    font-size: 30px;
+}
+.left, .right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.hamburger > div{
+    background-color:#707070;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+}
+.hamburger > div:nth-child(2){
+    background-color: rgb(146, 209, 209);
+}
+
