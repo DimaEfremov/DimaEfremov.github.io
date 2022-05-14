@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: aquamarine;
+            margin: 100px;
+    padding: 1.5em 4.5em;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 900;
+    color:black;
+        }
+    </style>
+</head>
+<body>
+    <p>Игрок 1: funny_nickname</p>
+    <script>
+        const para = document.querySelector('p');
+        para.addEventListener('click', updateName);
+
+        function updateName() {
+            let name = prompt('Введите новое имя');
+            para.textContent = 'Игрок 1: ' + name;
+        }
+    </script>
+</body>
+</html>
+
+    
