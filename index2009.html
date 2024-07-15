@@ -9,7 +9,6 @@
         .navbar{
             display: flex;
             width: 100%;
-            height: 8%;
             background-color: darkcyan;
             justify-content:space-between;
             align-items: center;
@@ -22,7 +21,7 @@
         }
         .logo{
             color: yellow;
-            padding: 3em;
+            padding: 1em;
             font-weight: bold;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
@@ -33,21 +32,31 @@
             text-decoration: none;
             font-weight: 700;
         }
-        .first, .second, .third{
+        .besfirst, .first, .second, .third{
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
         
         }
+        .besfirst{
+            background: linear-gradient(180deg, darkcyan, orange);
+        }
         .first{
-            background-color: blueviolet;
+            background: linear-gradient(0deg, blue, orange);
         }
         .second{
-            background-color:darkorange;
+            background: linear-gradient(180deg, blue, black);
         }
         .third{
+            background: linear-gradient(360deg, forestgreen, black);
+        }
+        .fourth{
             background-color: forestgreen;
+            height: 11vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .container{
            border: 5px solid yellow;
@@ -68,6 +77,95 @@
         html{
             scroll-behavior: smooth;
         }
+        .logogo{
+            color: rgb(255, 255, 255);
+            font-size: 6em;
+            font-family: fantasy;
+            font-weight: 900;
+            cursor: pointer;
+            position: relative;
+        }
+        .logogo::before{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 5px;
+            background-color: #dbbf21;
+            bottom: 0;
+            left: 0;
+            transition: all ease-in-out .5s;
+        }
+        .logogo::after{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 5px;
+            background-color: #dbbf21;
+            top: 0;
+            right: 0;
+            transition: all ease-in-out .5s;
+        }
+        .logogo:hover::before{
+            width: 100%;
+            height: 5px;
+        }
+        .logogo:hover::after{
+            width: 100%;
+            height: 5px;
+        }
+        .social-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+.social-icons>li {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.social-icons a {
+  position: relative;
+  background-color: #000000;
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: background-color .3s ease-in-out;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: .25rem;
+}
+.social-icons a:hover {
+  background-color: #cbabab;
+}
+.social-icons a::before {
+  content: "";
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  left: .65rem;
+  top: .65rem;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+.social-icons .social-icon-twitter::before {
+  background-image: url("https://cdn.icon-icons.com/icons2/836/PNG/96/Instagram_icon-icons.com_66804.png");
+}
+.social-icons .social-icon-fb::before {
+  background-image: url("https://cdn.icon-icons.com/icons2/3685/PNG/96/facebook_logo_icon_229298.png");
+}
+.social-icons .social-icon-vk::before {
+  background-image: url("https://cdn.icon-icons.com/icons2/2037/PNG/96/media_social_vk_vkontakte_icon_124252.png");
+}
+.social-icons .social-icon-telegram::before {
+  background-image: url("https://cdn.icon-icons.com/icons2/3685/PNG/96/telegram_logo_icon_229299.png");
+}
+.social-icons .social-icon-youtube::before {
+  background-image: url("https://cdn.icon-icons.com/icons2/836/PNG/96/Youtube_icon-icons.com_66802.png");
+}
     </style>
 </head>
 <body>
@@ -76,11 +174,21 @@
             logo
         </div>
         <div class="menu">
+            <a href="#homepage">Page</a>
             <a href="#home">Home</a>
             <a href="#questions">Question</a>
             <a href="#about">About me</a>
+            <a href="#socialmedias">Social Medias</a>
 
         </div>
+    </div>
+    <div class="besfirst" id="homepage">
+        <div class="logogo">
+            WELCOME TO HOME
+        </div>
+        <a class="button" href="#bottom">
+            BUTTON
+        </a>
     </div>
     <div class="first" id="home">
         <div class="container">
@@ -97,5 +205,15 @@
             <a href="index02.html">About me</a>
         </div>
     </div>
+    <div class="fourth" id="socialmedias">
+        <ul class="social-icons">
+            <li><a class="social-icon-twitter" href="http://instagram.com/" title="..." target="_blank" rel="noopener"></a></li>
+            <li><a class="social-icon-fb" href="https://facebook.com/" title="..." target="_blank" rel="noopener"></a></li>
+            <li><a class="social-icon-vk" href="https://vk.com/dmitriy0862" title="https://vk.com/dmitriy0862" target="_blank" rel="noopener"></a></li>
+            <li><a class="social-icon-telegram" href="https://web.telegram.org/a/" title="..." target="_blank" rel="noopener"></a></li>
+            <li><a class="social-icon-youtube" href="https://www.youtube.com/" title="..." target="_blank" rel="noopener"></a></li>
+          </ul>
+    </div>
+
 </body>
 </html>
